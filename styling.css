@@ -1,0 +1,141 @@
+/* Body styles */
+body {
+    background-color: hsl(0, 0%, 81%);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Container for the testimonials grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 20px;
+    padding: 40px;
+    background-color: #fff;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: auto;
+    padding-bottom: 35%;
+    padding-top: 10%;
+    padding-left: 50%;
+    padding-right: 50%;
+
+}
+
+.container .quotationmark {
+    position: absolute;
+    top: 40px;
+    right: 800px; 
+}
+
+.testimonial .img{
+    width: 11px;
+    height: 1px;
+    border-radius: 50%;
+    border: 2px solid #0d0101;
+    margin-right: 5px;
+}
+
+
+.container .header {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+  /* Verified graduate status */
+  .verified-graduate {
+    font-style: italic;
+    color: #666; /* Replace with actual color codes */
+  }
+  
+/* Testimonial card 1 */
+
+.testimonial1 {
+    background-color: hsl(263, 100%, 23%);
+    padding: 20px;
+    border-radius: 25px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 500px;
+
+}
+
+/* Testimonial card 2 */
+
+.testimonial2 {
+    background-color: hsl(217, 19%, 35%);
+    padding: 20px;
+    border-radius: 25px;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    color: hsl(0, 0%, 100%);
+}
+
+/* Testimonial card 3 */
+.testimonial3  {
+    background-color: hsl(210, 12%, 94%);
+    padding: 20px;
+    border-radius: 25px;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    color: hsl(217, 19%, 35%);
+    margin-left: 500px;
+}
+
+/* Testimonial card 4 */
+.testimonial4{
+    background-color: hsl(219, 29%, 14%);
+    padding: 20px;
+    border-radius: 25px;
+    grid-column: 2 / span 2;
+    grid-row: 2/ span 1;
+    color: hsl(0, 40%, 91%);
+}
+
+/* Testimonial card 5 */
+.testimonial5{
+    background-color: hsla(0, 33%, 90%, 0.6);
+    padding: 20px;
+    border-radius: 25px;
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 2;
+    color: hsl(217, 19%, 35%);
+    margin-right: 600px;
+}
+
+
+
+.testimonial h2 {
+    font-size: 1.5em;
+  }
+  .testimonial .status {
+    font-weight: bold;
+  }
+  .testimonial h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  .testimonial5 span {
+    font-style: italic;
+    margin-top: 15px;
+  }
+@media only screen and (max-width: 640px) {
+    .testimonial1,
+    .testimonial2,
+    .testimonial3,
+    .testimonial4,
+    .testimonial5 {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: 1fr; /* Define a single column for larger screens */
+  }
+}
